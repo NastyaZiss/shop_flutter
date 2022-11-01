@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_flutter/styles.dart';
 import 'home_pages.dart';
 
 
@@ -15,8 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shop',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-
+        splashColor: Colors.grey,
       ),
       home: const MyHomePage(),
     );
