@@ -14,7 +14,7 @@ class ProductsWidget extends StatefulWidget {
 
 class _ProductsWidgetState extends State<ProductsWidget> {
 
-  bool click = true;
+  bool click = false;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
               color: Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(15.0)),
             ),
-          ),
+          ),// base white card product
           Positioned(
             left: 0,
             top: 50,
@@ -38,6 +38,11 @@ class _ProductsWidgetState extends State<ProductsWidget> {
             child: Container(
               width: 180,
               height: 150,
+              child: Container(
+                width: 180,
+                height: 150,
+                child: Image.asset('assets/img/kross_green_blue.png'),
+              ),
               decoration: BoxDecoration(
                 color: AppColors.ProductColorSh1,
                 borderRadius: BorderRadius.only(
@@ -45,14 +50,11 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                   topRight: Radius.circular(15),
                   bottomLeft: Radius.circular(15),
                   bottomRight: Radius.circular(15),
-                  // bottomRight: Radius.elliptical(50, 40),
                 ),
               ),
-            ),
-          ),
+            ),// Blue and image sneakers(kross)
+          ),// Blue Container, sneakers
           Container(width: 180,height: 55,
-            // alignment: Alignment.bottomRight,
-            // decoration: BoxDecoration(color: Colors.red),
               child:
               Padding(
                 padding: const EdgeInsets.only(left: 15,bottom: 8,right: 0),
@@ -80,20 +82,14 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                             });
                           },
                           icon: Icon(
-                            (click == false)
-                                ? Icons.favorite
-                                : Icons.favorite_border_outlined,
-                            size: 25,
-                          ),
+                            (click == false) ? Icons.favorite : Icons.favorite_border_outlined, size: 25,),
                         ),
                       ),
                     ),
                   ],
                 ),
               )
-          ),
-          //),
-
+          ), // top of the product card, text and icon favorite.
         ],
       ),
     );

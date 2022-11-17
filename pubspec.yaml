@@ -66,6 +66,7 @@ flutter:
     - assets/img/home_bell.png
     - assets/img/home_filtr.png
     - assets/img/home_point.png
+    - assets/img/kross_green_blue.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
