@@ -68,8 +68,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                         children: [
                           Text("top on the month", style: AppColors.h_3,),
                           Text("Air Max 270 G",style: AppColors.h_1,),
-                        ],
-                      ),
+                        ], ),
                     ),
                     Container(
                       // decoration: BoxDecoration(color: Colors.blueAccent),
